@@ -11,9 +11,16 @@ Console.Write ("Введи второе число: ");
 Number2 = Convert.ToDouble (Console.ReadLine());
 if (Number1*Number1 == Number2)
 {
-    Console.WriteLine("Квадрат {0} равен {1}", Number1, Number2);
+    Console.WriteLine($"Квадрат {Number1} равен {Number2}");
 }
 else
 {
-    Console.WriteLine("Квадрат {0} не равен {1}", Number1, Number2);
+    if (Number2*Number2 == Number1)
+    {
+        Console.WriteLine($"Квадрат {Number2} равен {Number1}");
+    }
+    else
+    {
+        Console.WriteLine("Ни одно из чисел не является квадратом второго");
+    };
 };
