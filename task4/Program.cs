@@ -8,7 +8,7 @@ int IDDayNumber = Convert.ToInt32 (DayNumber-49); // -1 что бы ID прав�
 string DayWeek = Week [IDDayNumber];
 System.Console.WriteLine (DayWeek);
 
-/*
+/*   // !!Я не понимаю, почему здесь какую цифру не вводи везде идёт переход к else??
 System.Console.WriteLine ("Введи номер дня в неделе: ");
 int DayNumber = Convert.ToInt32 (Console.Read ());
 if (DayNumber == 1)
