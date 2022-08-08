@@ -3,10 +3,9 @@ Console.Clear();
 
 string [] Week = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
 System.Console.Write ("Введи номер дня недели: ");
-int DayNumber = Convert.ToInt32 (Console.Read ()); //Почему если я ввожу 1, то в DayNumber записывается 49??
-int IDDayNumber = Convert.ToInt32 (DayNumber-49); // -1 что бы ID правильный показывал, -48 не знаю почему (см комент строки выше)
-string DayWeek = Week [IDDayNumber];
-System.Console.WriteLine (DayWeek);
+int DayNumber = Convert.ToInt32 (Console.ReadLine ());
+int IDDayNumber = Convert.ToInt32 (DayNumber-1);
+System.Console.WriteLine (Week [IDDayNumber]);
 
 /*   // !!Я не понимаю, почему здесь какую цифру не вводи везде идёт переход к else??
 System.Console.WriteLine ("Введи номер дня в неделе: ");
