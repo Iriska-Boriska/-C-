@@ -38,6 +38,17 @@ void RandomArr2(int[,] arr, int start, int end) // заполнение элем
     }
 }
 
+void RandomArr2Double(double[,] arr) // заполнение элементов [,] массива случайными числами
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            arr[i, j] = new Random().NextDouble();
+        }
+    }
+}
+
 void CounterArr(int[] arr, ref int Even, ref int Odd) // Подсчитывает колличество чётных и не чётных числе в массиве
 {
     for (int i = 0; i<arr.Length; i++)
